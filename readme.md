@@ -30,8 +30,8 @@ for cakePHP 1.3
 ## Config
 
   ```php
-  var $actsAs = array(
-    // Url the thumnails will point to
+  var $actsAs = array('Search.Searchable'=>array(
+    // Url the thumbnails will point to
     'url'=> array(
 			'prefix' => false,
 			'admin' => false,
@@ -41,13 +41,13 @@ for cakePHP 1.3
 			'{id}', // "{id}" is a placeholder that will be replaced by the real id
 			'lang'=>'{lang}', // "{lang}" is a placeholder that will be replaced by the real language
 		),
-    // Field that will be used as the title of the thumnail
+    // Field that will be used as the title of the thumbnail
 		'title'=>'title',
-    // Field that will be used as the text below the title in the thumnail
+    // Field that will be used as the text below the title in the thumbnail
 		'desc'=>'desc',
     // Fields that will be used for the full-text search
 		'content'=>array('short_desc','short_text','desc','text'),
     // You must set this if this model is within a plugin
 		'plugin'=>null
-  );
+  ));
   ```
